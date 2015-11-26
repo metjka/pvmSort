@@ -71,10 +71,8 @@ int main()
     // 8 - odebranie od mastera infa czy koniec sortowania
     int status = pvm_nrecv(-1, TAG_MASTER);
     if(status >0){
-            printf("Koniec!\n");
-			pvm_initsend(PvmDataRaw);
-			pvm_pkstr( cmp );
-			pvm_send( pvm_parent(), MSG_SLV_END );
+            
+suka
 	}
 	pvm_exit();
 }
