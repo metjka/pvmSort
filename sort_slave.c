@@ -72,7 +72,7 @@ int main()
     int status = pvm_nrecv(-1, TAG_MASTER);
     if(status >0){
             
-suka
+
 	}
 	pvm_exit();
 }
