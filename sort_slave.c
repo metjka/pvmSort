@@ -105,14 +105,14 @@ int main()
     // 8 - odebranie od mastera infa czy koniec sortowania
     int status = pvm_nrecv(-1, TAG_MASTER);
     if(status >0){
-<<<<<<< HEAD
+
 		printf("suc");
         pvm_exit();
 		exit(0);
-=======
+
             
 
->>>>>>> 5d4259e908ec0e89b84d5e5a949faffea30ec53b
+
 	}
 	pvm_exit();
 }
