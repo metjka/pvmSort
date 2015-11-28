@@ -5,7 +5,7 @@ int main(int argc, char **argv) {
 	int tids[SLAVENUM], ok, mytid;
 	nproc = pvm_spawn("sort_slave",0,PvmTaskDefault, "LINUX64",SLAVENUM, tids);
 	printf("Master id %d\n", nproc );
-
+    //app for sorting
     do{
     	status = 0;
         //if 0 - all done
@@ -24,8 +24,6 @@ int main(int argc, char **argv) {
 			pvm_send( tids[i], TAG_MASTER );    	
 		}
 	}while(status == 1);
-
-
-    
+	printf("Master end!");
 	pvm_exit();
 }
